@@ -1,0 +1,96 @@
+git init
+git add .
+git commit -m "Primer commit - sitio base"
+git remote add origin https://github.com/arb-la-paz/arb-la-paz.git
+git branch -M main
+git push -u origin main
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARB La Paz - Equipamiento 4x4</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-red-700 text-white p-4 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">ARB La Paz</h1>
+      <nav>
+        <ul class="flex gap-6 text-sm">
+          <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+          <li><a href="#productos" class="hover:underline">Productos</a></li>
+          <li><a href="#servicios" class="hover:underline">Servicios</a></li>
+          <li><a href="#nosotros" class="hover:underline">Nosotros</a></li>
+          <li><a href="#contacto" class="hover:underline">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-6xl mx-auto p-6 space-y-16">
+
+    <!-- INICIO -->
+    <section id="inicio">
+      <h2 class="text-3xl font-semibold mb-4">Bienvenidos a ARB La Paz</h2>
+      <p class="text-lg">Somos representantes oficiales de ARB Australia en Bolivia. Ofrecemos equipamiento de alta calidad para vehículos 4x4, ideales para aventuras, trabajo y expediciones extremas.</p>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos">
+      <h2 class="text-2xl font-semibold mb-4">Productos destacados</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white shadow p-4 rounded">
+          <h3 class="font-bold mb-2">Parachoques ARB Deluxe</h3>
+          <p>Diseñados para máxima protección y estilo. Compatibles con winches.</p>
+        </div>
+        <div class="bg-white shadow p-4 rounded">
+          <h3 class="font-bold mb-2">Winches eléctricos</h3>
+          <p>Recuperación segura con capacidad desde 8,000 hasta 12,000 lbs.</p>
+        </div>
+        <div class="bg-white shadow p-4 rounded">
+          <h3 class="font-bold mb-2">Luces LED auxiliares</h3>
+          <p>Iluminación potente para caminos extremos y condiciones adversas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+      <h2 class="text-2xl font-semibold mb-4">Nuestros servicios</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Instalación profesional de equipamiento ARB</li>
+        <li>Mantenimiento y revisión técnica 4x4</li>
+        <li>Asesoría personalizada para expediciones</li>
+      </ul>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros">
+      <h2 class="text-2xl font-semibold mb-4">Sobre nosotros</h2>
+      <p>ARB La Paz nace con la pasión por la aventura y la calidad. Trabajamos para ofrecer soluciones robustas a los conductores que exigen lo mejor de sus vehículos en condiciones difíciles.</p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2 class="text-2xl font-semibold mb-4">Contáctanos</h2>
+      <form class="bg-white p-6 rounded shadow space-y-4 max-w-lg">
+        <input type="text" placeholder="Nombre" class="w-full border p-2 rounded" required />
+        <input type="email" placeholder="Correo electrónico" class="w-full border p-2 rounded" required />
+        <textarea placeholder="Mensaje" class="w-full border p-2 rounded" rows="4" required></textarea>
+        <button type="submit" class="bg-red-700 text-white px-4 py-2 rounded hover:bg-red-800">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    <p>&copy; 2025 ARB La Paz - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
